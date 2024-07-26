@@ -14,7 +14,9 @@ release = '1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = [
+    'sphinx_rtd_theme',
+]
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -24,9 +26,9 @@ exclude_patterns = []
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-import ushahidi_sphinx_rtd_theme
-# import sphinx_rtd_theme
-# html_theme = 'sphinx_rtd_theme'
-html_theme = 'ushahidi_sphinx_rtd_theme'
+# import ushahidi_sphinx_rtd_theme
+import sphinx_rtd_theme
+html_theme = 'sphinx_rtd_theme'
+# html_theme = 'ushahidi_sphinx_rtd_theme'
 html_static_path = ['_static']
 
